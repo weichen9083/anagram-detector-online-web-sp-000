@@ -14,9 +14,9 @@ class Anagram
   
   array.map do |word|
     if word.split("").sort == y
-      "what"
+      word
     else 
-      "how"
+      ""
     end 
   end 
     
