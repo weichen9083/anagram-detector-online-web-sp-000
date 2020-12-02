@@ -13,7 +13,10 @@ class Anagram
      y = @word.split("").sort
   
   array.map do |word|
-    word.split("").sort == y
+    if word.split("").sort == y
+      word
+    else 
+    end 
   end 
     
   end 
