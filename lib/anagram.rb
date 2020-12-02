@@ -10,6 +10,9 @@ class Anagram
   end 
   
   def match(phase) 
+     y = @word.split("").sort
+  
+  
     
   end 
   
