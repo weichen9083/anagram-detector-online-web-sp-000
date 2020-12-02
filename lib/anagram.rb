@@ -5,23 +5,22 @@ class Anagram
   
   attr_accessor :word
   
-  def initialize(word)
+  def initialize (word)
+    @word = word
+  end 
+  
+  def match(phase)
+    parseed = phase.split(" ")
     
-    @word = word 
+    parseed.find do |word| 
+    word.split("").sort == @word.split("").sort
+   end 
+ end 
   
+    
+  
+    
   end 
   
-  def match(array)
-    y = @word.split("").sort
-    z = []
-    array.each do |word|
-      if word.split("").sort == y 
-        z << word
-      end 
-    end 
-    z
-  end 
   
-end 
-
-
+  
