@@ -9,7 +9,7 @@ class Anagram
     @word = word
   end 
   
-  def match(phase) 
+  def match(array) 
      y = @word.split("").sort
   
   array.map do |word|
