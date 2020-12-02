@@ -9,18 +9,16 @@ class Anagram
     @word = word
   end 
   
-  def match(array) 
-     y = @word.split("").sort
-  
-  array.each do |word|
-    if word.split("").sort == y
-      word
-    else 
-      ""
+ def match(array)
+      y = @word.split("").sort
+      z = []
+      array.each do |word|
+        if word.split("").sort == y 
+          z << word
+        end 
+      end 
+      z
     end 
-  end 
-    
-  end 
   
   
 end 
