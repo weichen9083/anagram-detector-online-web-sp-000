@@ -12,7 +12,7 @@ class Anagram
   def match(phase) 
      y = @word.split("").sort
   
-  
+  array.map do |word|
     
   end 
   
