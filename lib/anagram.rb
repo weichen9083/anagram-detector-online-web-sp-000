@@ -9,18 +9,12 @@ class Anagram
     @word = word
   end 
   
-  def match(phase)
-    parseed = phase.split(" ")
-    
-    parseed.find do |word| 
-    word.split("").sort == @word.split("").sort
-   end 
- end 
-  
-    
-  
+  def match(phase) 
     
   end 
+  
+  
+end 
   
   
   
